@@ -95,3 +95,8 @@ IMPORTANT: Please ensure that there are proper delays after each website interac
 - Saves the resulting HTML to your local hard drive as "bestbuy_deal_of_the_day.htm"
 - You can then do NLP with these comments!
   
+### Congratulations!
+I believe that you have already become a fluent web-scrapper after finishing these 6 exercises.          
+If you want more, however, you can check out my next repo 'MongoDB with Python'. There are other two more comprehensive End-to-End projects that shows not only scrape the information but also create a MongoDB collection to store, update, and query the information for further reference.          
+Also, the scraping projects there encorporated RegEX, and more advanced techniques in Selenium and BeautifulSoup to locate blocks with random-generated attribute values, for example, Yelp's webpage.           
+Congratulations again and see you there!
