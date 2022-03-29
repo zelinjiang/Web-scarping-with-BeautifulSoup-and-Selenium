@@ -2,7 +2,7 @@
 
 Hey there, welcome to Zelin's Master of Science in Web-scraping (MSWS) program.😂
 
-This is a repo with 5 web-scraping exercise that will boost your ability of getting any information from any webpage. It's totally ok if you don't know any thing about web-scraping yet, because that's also where I started from. 
+This repo consists of 6 web-scraping exercises that will free your hand and save your time on getting any information from any webpage. After finishing these 6 step-by-step exercise, you will be able to scrape comments and do your NLP research, you will be also able to scrape your competitor's price information to strategically pricing your products, you can even use it to integrate information from multiple source and build your own business! Don't worry if you don't know any thing about web-scraping yet, there is also where I started from. 
 
 In the first 4 practices, we will mainly use two Python packages: 
 - One is the 'requests' package, which is able to access any webpage and store the page into an object.
@@ -90,6 +90,7 @@ Each page request needs to be followed by at least a 5 second pause! Remember, y
 ### 6 - Advancing Selenium - Scraping Bustbuy Deal of the Day
 - Write a script that goes to bestbuy.com, clicks on Deal of the Day
 - reads how much time is left for the Deal of the Day and prints the remaining time to screen (console)
+IMPORTANT: Please ensure that there are proper delays after each website interaction.
 - Clicks on the Deal of the Day (the actual product), clicks on its reviews
 - Saves the resulting HTML to your local hard drive as "bestbuy_deal_of_the_day.htm"
 - You can then do NLP with these comments!
