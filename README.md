@@ -26,26 +26,26 @@ In this case, there is a powerful package called 'Selenium' that can automate yo
 Get
 - which URL variable represents the search term?          
 The variable "_nkw" represents the search term.
-- click on “Auction”. Which URL variable represents auction searches?
+- click on “Auction”. Which URL variable represents auction searches?         
 The variable "LH_Auction" represents auction searches.
-- Can you come up with a shorter URL that produces the same search result page?
+- Can you come up with a shorter URL that produces the same search result page?         
 https://www.ebay.com/sch/i.html?_nkw=lg+phone&LH_Auction=1
 The aboce url produces the same search result page
-- Click on the next search result page and observe how the URL changes. What variable in the URL identifies the page number?
+- Click on the next search result page and observe how the URL changes. What variable in the URL identifies the page number?         
 The variable "_pgn" identifies the page number.
-- What is the feature common (in HTML source code) to each item in the search results page? i.e., what item do we need to select to obtain each item among the search results?
+- What is the feature common (in HTML source code) to each item in the search results page? i.e., what item do we need to select to obtain each item among the search results?         
 If we want to locate the blocks for each item: Tag "li" with class as "s-item s-itempl-on-bottom s-item--watch-at-corner" is the common feature for each item in the page.
 If we want to get the name for each item: Tag "H3" with class as "s-itemtitle"is the common feature for the name of each item.
 
 #### Coding questions:
 - (1) Use the URL identified above and write code that loads eBay’s search result page for “lg tv”. Save the result to a file.
-- (2) Write a loop that will download the first 10 pages of search results (or the maximum result page number, whichever is less). Save each of these pages
+- (2) Write a loop that will download the first 10 pages of search results (or the maximum result page number, whichever is less). Save each of these pages         
 IMPORTANT: Each page request needs to be followed by at least a 10 second pause! remember,
 you want your program to mimic your behavior as a human and help you make good
 purchasing decisions.
 - (3) Write a separate piece of code that loops through the pages you downloaded in (b) and opens and parses them into a Python BeautifulSoup-object. Next find the sponsored items on each search result page and print their URL to the screen
 
-### 3 - Imitating Log in behavior with Cookies
+### 3 - Imitating Human Log in behavior with Cookies
 #### Preparation: 
 - Use your browser to access Planespotters.net, create an account
 - Verify that your login works: start an incognito session, navigating to https://www.planespotters.net/user/login , log in, go to your profile page https://www.planespotters.net/member/profile
@@ -60,21 +60,21 @@ purchasing decisions.
 #### No coding questions:
 Use your browsers development tools. Open the network tab and analyze the network for the following:
 - go to https://www.barnesandnoble.com and navigate to “Books” > “B&N Top 100”. Have a look at the URL
-- navigate to page 2 of “B&N Top 100”. Did the URL change? What type of request is B&N using, GET or POST?
+- navigate to page 2 of “B&N Top 100”. Did the URL change? What type of request is B&N using, GET or POST?         
 The url changed, a new variable 'page' is introduced. When changing page, B&N is using 'GET' request.
-- which URL variable represents the page number? Is there a variable that represents the number of items per page?
+- which URL variable represents the page number? Is there a variable that represents the number of items per page?         
 'page' is the variable represents the page number. 'Nrpp' is the variable represents the number of items per page. 
-- try to modify these numbers to view the first page with 40 items of “B&N Top 100”
+- try to modify these numbers to view the first page with 40 items of “B&N Top 100”         
 The modified url: 'https://www.barnesandnoble.com/b/books/_/N-1fZ29Z8q8?Nrpp=40&page=1'
--  inspecting the HTML source code of (e), how can we access each book in the list of B&N’s top 40? How can we access each book’s product page URL (e.g., https://www.barnesandnoble.com/w/thelastthing-he-told-me-laura-dave/1137937512?ean=9781501171345)?
+-  inspecting the HTML source code of (e), how can we access each book in the list of B&N’s top 40? How can we access each book’s product page URL (e.g., https://www.barnesandnoble.com/w/thelastthing-he-told-me-laura-dave/1137937512?ean=9781501171345)?         
 Each book is nested in a "div" with class 'row topX-row'
 We can access each book's product page by find the 'href' right after each "h3" tag with class = 'product-info-title'. A note here is that we need to add the link of the main page 'https://www.barnesandnoble.com' as prefix to the 'href' we get.
 
 #### Coding questions:
 - Use the URL identified above and write code that loads the first page with 40 items per page of “B&N Top 100”.
 - Take your code in (a) and create a list of each book’s product page URL. This list should be of length 40
-- Write a loop that downloads each product page of the top 40 books in “B&N Top 100”. I.e., save each of these pages to your computer using a meaningful filename
-IMPORTANT:
+- Write a loop that downloads each product page of the top 40 books in “B&N Top 100”. I.e., save each of these pages to your computer using a meaningful filename         
+IMPORTANT:         
 Each page request needs to be followed by at least a 5 second pause! Remember, you want your program to mimic your behavior as a human and help you make good purchasing decisions
 - Write a separate piece of code that loops through the pages you downloaded in (c), opens and parses them into a Python or Java xxxxsoup-object. Next, access the “Overview” section of the page and print the first 100 characters of the overview text to screen.
 
