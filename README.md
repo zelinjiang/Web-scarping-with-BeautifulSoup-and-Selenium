@@ -5,9 +5,9 @@ Hey there, welcome to Zelin's Master of Science in Web-scraping (MSWS) program.�
 This repo consists of 6 web-scraping exercises that will free your hand and save your time on getting any information from any webpage. After finishing these 6 step-by-step exercise, you will be able to scrape comments and do your NLP research, you will be also able to scrape your competitor's price information to strategically pricing your products, you can even use it to integrate information from multiple source and build your own business! Don't worry if you don't know any thing about web-scraping yet, there is also where I started from. 
 
 In the first 4 practices, we will mainly use two Python packages: 
-- One is the 'requests' package, which is able to access any webpage and store the page into an object.
-- Another one is called 'BeautifulSoup'🥣, which can help you parse the webpage object so that you can locate the block that your focal information lies in, and then extract it. 
-It is highly recommended that you keep the BeautifulSoup official documentation by your hand: https://beautiful-soup-4.readthedocs.io/en/latest/. Remember, like all programming puzzles, there is no single solution for any task, read through the documentation and try to customize my code into your own way!
+- One is the 'requests' package, which is able to access any webpage and store the page into an object.          
+- Another one is called 'BeautifulSoup'🥣, which can help you parse the webpage object so that you can locate the block that your focal information lies in, and then extract it.         
+It is highly recommended that you keep the BeautifulSoup official documentation by your hand: https://beautiful-soup-4.readthedocs.io/en/latest/. Remember, like all programming puzzles, there is no single solution for any task, read through the documentation and try to customize my code into your own way!          
 
 In the 5th and 6th practice, we will introduce how to deal with some webpages that are dynamically changing, for example, sometimes you may find that you need to scroll down to load more information (like LinkedIn, Instagram, etc), instead of clicking the page numbers. In this case, it is not possible to load more information by editing the variables embedded in the url link (e.g.: pgn=2 for second page).
 In this case, there is a powerful package called 'Selenium' that can automate your browser to imitate human behaviors, e.g.: scroll down, click links, etc
@@ -22,9 +22,9 @@ In this case, there is a powerful package called 'Selenium' that can automate yo
 ### 2 - Scraping the first 10 page of LG TV or anything on Ebay:
 #### No coding questions: 
 - go to https://www.ebay.com and search for “lg phone”
-- what type of search request is eBay using, GET or POST?
+- what type of search request is eBay using, GET or POST?           
 Get
-- which URL variable represents the search term?
+- which URL variable represents the search term?          
 The variable "_nkw" represents the search term.
 - click on “Auction”. Which URL variable represents auction searches?
 The variable "LH_Auction" represents auction searches.
