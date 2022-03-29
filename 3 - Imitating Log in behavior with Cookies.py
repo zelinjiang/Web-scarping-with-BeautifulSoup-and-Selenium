@@ -34,8 +34,8 @@ session_login = requests.session()
 res2 = session_login.post(url_login,
     headers = header_my,
     cookies = cookies_beforelogin,
-    data = {'username' : 'jzl123456@gmail.com',  # write your username
-            'password' : 'jzl123456',            # write your password
+    data = {'username' : 'xxxxx@gmail.com',  # write your username
+            'password' : 'xxxxx',            # write your password
             'csrf' : csrf_my,
             'rid': ''},
     timeout = 10)
