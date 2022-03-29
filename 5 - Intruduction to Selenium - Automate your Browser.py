@@ -2,7 +2,8 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
 
-driver = webdriver.Chrome('/usr/local/bin/chromedriver')
+# You need to download the webdriver for your version of browser, here I am using Chrome 
+driver = webdriver.Chrome('/usr/local/bin/chromedriver') # change the directory to your driver's directory
 driver.implicitly_wait(10)
 driver.set_script_timeout(120)
 driver.set_page_load_timeout(10)
