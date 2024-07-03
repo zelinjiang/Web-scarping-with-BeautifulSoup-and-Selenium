@@ -17,7 +17,7 @@ In this case, there is a powerful package called 'Selenium' that can automate yo
 - (2) Find the first “Spotlight deal” on the website.
 - (3) Return/print the old and reduced price of the same. (For example, the first spotlight deal is for the product let’s say, Acer Chromebook. The original price was $249.99, and the new reduced deal price is $129.99.)
 
-### 2 - Scraping the first 10 page of LG TV or anything on Ebay:
+### 2 - Scraping Product-of-Interest on Ebay:
 #### No coding questions: 
 - go to https://www.ebay.com and search for “lg phone”
 - what type of search request is eBay using, GET or POST?           
@@ -43,7 +43,7 @@ you want your program to mimic your behavior as a human and help you make good
 purchasing decisions.
 - (3) Write a separate piece of code that loops through the pages you downloaded in (b) and opens and parses them into a Python BeautifulSoup-object. Next find the sponsored items on each search result page and print their URL to the screen
 
-### 3 - Imitating Human Log in behavior with Cookies
+### 3 - Imitating Human-like Log-in behavior with Cookies
 #### Preparation: 
 - Use your browser to access Planespotters.net, create an account
 - Verify that your login works: start an incognito session, navigating to https://www.planespotters.net/user/login , log in, go to your profile page https://www.planespotters.net/member/profile
