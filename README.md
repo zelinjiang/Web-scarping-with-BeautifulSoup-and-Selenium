@@ -1,7 +1,5 @@
 # Web-scarping-with-BeautifulSoup-and-Selenium
 
-Hey there, welcome to Zelin's Master of Science in Web-scraping (MSWS) program.😂
-
 This repo consists of 6 web-scraping exercises that will free your hand and save your time on getting any information from any webpage. After finishing these 6 step-by-step exercise, you will be able to scrape comments and do your NLP research, you will be also able to scrape your competitor's price information to strategically pricing your products, you can even use it to integrate information from multiple source and build your own business! Don't worry if you don't know any thing about web-scraping yet, there is also where I started from. 
 
 In the first 4 practices, we will mainly use two Python packages: 
